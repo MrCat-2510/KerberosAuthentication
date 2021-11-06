@@ -7,8 +7,8 @@ This project is use **Python Flask** as the main GUI. Encryption algorithms use 
 - **base64** & **os**: use **base64** to encrypt the privated key of Alice and Server. Because I want to create a secret key based on the user name and password of Alice, so I create a string name **Text_String** that contain Alice's username and Alice's password then merge with random characters was created by **os** and then use **based64** to convert it to b64encode so Fernet can use this key to encrypt and decrypt the message. The number with random characters of os is equal (32 - length of **Text_String**).
 
 ## How to run it
-###**Step 1**: Install Python Flask, cryptography.fernet, base64, os
-###**Step 2**: use this command line 
+### **Step 1**: Install Python Flask, cryptography.fernet, base64, os
+### **Step 2**: Use this command line 
 ```
 python "app.py"
 
@@ -25,14 +25,21 @@ python "app.py"
  * Debugger PIN: 101-980-169
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  ```
-###**Step 3**: go to the link http://127.0.0.1:5000/ . You will see the GUI like this:
+### **Step 3**: go to the link http://127.0.0.1:5000/ . You will see the GUI like this:
  ![image](https://user-images.githubusercontent.com/58814046/140594891-19dbb06e-9811-4ac9-8892-ac0e1bc7c21a.png)
-###**Step 4**: Follow the tutorial and the demo project is done.
-###**Step 5**: Press Ctrl+C to quit. If you cannot turn off the Port, open cmd again and do below code, <PORT> = 5000, after you run first line, take <PID> of a PORT and pass it to the second line.
+### **Step 4**: Follow the tutorial and the demo project is done.
+### **Step 5**: Press Ctrl+C to quit. If you cannot turn off the Port, open cmd again and do below code, <PORT> = 5000, after you run first line, take <PID> of a PORT and pass it to the second line.
 ```
 netstat -ano | findstr :<PORT>
 taskkill /PID <PID> /F
 
 ```
+
+## Some preview pictures of this system:
+![image](https://user-images.githubusercontent.com/58814046/140595396-e33cd322-7f84-471d-ae0b-44e690034f09.png)
+![image](https://user-images.githubusercontent.com/58814046/140595405-25e23e7c-6501-4ed6-8772-ba7bce7f2ba4.png)
+![image](https://user-images.githubusercontent.com/58814046/140595424-e8fb8d73-eea0-4701-adf0-bdc517c629d9.png)
+
+
  
  
