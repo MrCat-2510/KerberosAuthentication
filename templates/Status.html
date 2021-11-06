@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}Status{% endblock %}
+<div class="container">{% block content %}
+    <form action = "" method="post">
+        <p>Check Ticket</p>
+        <br>
+        <input type = "text" placeholder="Input Ticket" name ="ticket_input">
+        <input type="submit" value="Check" id="Check">
+    </form>
+    <div class ='message'>
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if
+        messages %} {% for category, message in messages %} {% if category ==
+        'error' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+            <p>TOKEN IS WRONG OR OUTDATED. PLEASE GET AGAIN FROM Token</p>
+        </div>
+        {% elif category == 'timestamp'%}
+        <br>
+        <br>
+        <p>LIFETIME: {{message}} </p>
+
+        {% endif %} {% endfor %} {% endif %} {% endwith %}
+    </div>
+
+    {% endblock %}
+</div>
+

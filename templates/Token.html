@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}Token{% endblock %}
+
+<div class="container">{% block content %}
+    <form action = "" method="post">
+        <p>Name</p>
+        <input type = "text" placeholder="Input Name" name ="name_input">
+
+        <br>
+        <br>
+        <p>Password</p>
+        <input type = "text" placeholder="Password" name ="password_input">
+
+        <br>
+        <br>
+        <input type="submit" value="Get Token" id="token">
+
+        <br>
+        <br>
+        <p>THIS PAGE IS GET TOKEN</p>
+    </form>
+    <div class ='message'>
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if
+        messages %} {% for category, message in messages %} {% if category ==
+        'error' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+            <p>"WRONG USERNAME OR PASSWORD"</p>
+        </div>
+        {% else %}
+            <input type="text" value={{message}} id="myInput">
+            <button onclick="myFunction()">Copy Token</button>
+            <br>
+            <br>
+            <p>TOKEN IS VALID IN 60s</p>
+        {% endif %} {% endfor %} {% endif %} {% endwith %}
+    </div>
+
+    {% endblock %}
+</div>
+

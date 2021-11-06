@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+<div class="container">{% block content %}
+    <form action = "" method="post">
+        <p>Name</p>
+        <input type = "text" placeholder="Input Name" name ="name_input">
+
+        <br>
+        <br>
+        <p>Password</p>
+        <input type = "text" placeholder="Password" name ="password_input">
+
+        <br>
+        <br>
+        <p>Token</p>
+        <input type = "text" placeholder="Token" name ="Token_input">
+
+        <br>
+        <br>
+        <input type="submit" value="Get Access" id="access">
+    </form>
+    <div class ='message'>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %} {% if category == 'error' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+            <p>"WRONG USERNAME OR PASSWORD"</p>
+        </div>
+    {% elif category == 'error1' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+            <p>"TOKEN IS OUTDATED. PLEASE GET TOKEN AGAIN FROM Token"</p>
+        </div>
+    {% else %}
+       <div class="alert alert-success alter-dismissable fade show" role="alert">
+           <p>AUTHENTICATION COMPLETE. YOU CAN ACCESS DATABASE WITH TOKEN</p>
+        </div>
+    </div>
+
+    {% endif %}{% endfor %} {% endif %} {% endwith %}
+    {% endblock %}
+</div>

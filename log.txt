@@ -1,0 +1,60 @@
+-----------------Alice&AS--------------------------
+2021-11-05 12:03:16 : This is Alice Privated key: 
+ b'QWxpY2UxMjM-nMFtLMKoUXtmJZLyx6N273TcUrqWdAk=' 
+
+2021-11-05 12:03:16  ====> SENDING
+
+2021-11-05 12:03:16  Encrypted request to Authentication server: 
+ b'gAAAAABhhLsU8bDMgttppSxX0z3IwWpaUL1a2aXBS5Cb-ghtnmLIgNnBhoPr-Wna7BfVmraUe4e0nbhjz2UbOhbvBiyifjS8EvBJgAJ6KLi3ohCAkMwL6AY=' 
+
+2021-11-05 12:03:16  RECEIVED <===
+
+2021-11-05 12:03:16  Authentication Success. Create session key and TGT || AS
+2021-11-05 12:03:16  +++++++TGT.key is OUTDATED+++++++
+
+2021-11-05 12:03:16  Encrypted response from Authentication server: 
+ gAAAAABhhLsU50OIBnMZ498aVJ7NsALNNMCVBVfx0bX07OAvH7zcHgncHClfK00Is-u7jAFARmf2YWMe4UnhkEZh2qKcR1QvYGuVlyzv8vQu7l9G6FjZi40FxL8o9e6SHbchhJ2q_cQe||gAAAAABhhLsUjIFkwJibKPZUSHxlhHkWT_59eVFwIsf-3amKuHDqFqF9cXGhoWa2w2cyLPH4dRb6kyArFWVr-UHqhoDiTiHN5iKyXF3JB3K07UeBOdUKwlG9Cq2InzgrNBOaHgrTJVz6y9LUMMQp6k8zvTPOPFBZHj6U8rq7E3gYjEeje2NN_UzgIyuBTJlOZCcDSQKvq4OF 
+
+2021-11-05 12:03:16  Session key between Alice and TGS: 
+ b'bTrUBt7JhdexsRq-0qdNDZAJmPkwsdb9brXq4Rni8Mg=' 
+
+2021-11-05 12:03:16  Ticket Granting Ticket: 
+ gAAAAABhhLsUjIFkwJibKPZUSHxlhHkWT_59eVFwIsf-3amKuHDqFqF9cXGhoWa2w2cyLPH4dRb6kyArFWVr-UHqhoDiTiHN5iKyXF3JB3K07UeBOdUKwlG9Cq2InzgrNBOaHgrTJVz6y9LUMMQp6k8zvTPOPFBZHj6U8rq7E3gYjEeje2NN_UzgIyuBTJlOZCcDSQKvq4OF 
+
+
+
+-----------------Alice&TGS--------------------------
+2021-11-05 12:03:16  ====> SENDING
+
+2021-11-05 12:03:16  Encrypted request to Ticket Granting Server: 
+ TicketGrantingserver||gAAAAABhhLsU5BqeqOGiGzUsbRfnWle1XpgJaRaE5VC5EYQMxVBO1QkHfc-7EKxQKmlhGFXWm08w3InK-HQcWxLFyB60WRgDy2A2kMvEjvj64K6eAZvjFZo=||gAAAAABhhLsUjIFkwJibKPZUSHxlhHkWT_59eVFwIsf-3amKuHDqFqF9cXGhoWa2w2cyLPH4dRb6kyArFWVr-UHqhoDiTiHN5iKyXF3JB3K07UeBOdUKwlG9Cq2InzgrNBOaHgrTJVz6y9LUMMQp6k8zvTPOPFBZHj6U8rq7E3gYjEeje2NN_UzgIyuBTJlOZCcDSQKvq4OF 
+
+2021-11-05 12:03:16  RECEIVED<===
+
+2021-11-05 12:03:16  AUTHENTICATION IN TGT COMPLETE || TGS
+2021-11-05 12:03:16  +++++++Token.key is OUTDATED+++++++
+
+2021-11-05 12:03:16  Encrypted response from Ticket Granting Server: 
+ Alice||gAAAAABhhLsULWGSB4Ft1ZQwrhxhvLq_aXELrxn3cfsi6UnbxnXq8TCHc6ENQrBh6dxak1v72daz8Gon-q-E9Uz62Kv9jVXTqIXyYqLSLlsi2LiWwFSMQFtGhhM0Wuhd-heAhOFE0cBP||gAAAAABhhLsUyio0Gx4cAn4rpuPDpB_in_JNZ_AWjRFlBq43JVnnny1G0YiKdijWVuSFljfZrj1pCPvD_KSqw6DKS1ptlDad0IJ6RL5T00tl0aNZF0gSFjH1aL9gKGSkhTr5zetvuiIYwgKC33bpS7GWQWTLOZ0ym1He-g13qoQe17YOXyoTPFXitPg3Fk7Qlvzjv1VL1PN4 
+
+2021-11-05 12:03:16  Token Ticket: 
+ gAAAAABhhLsUyio0Gx4cAn4rpuPDpB_in_JNZ_AWjRFlBq43JVnnny1G0YiKdijWVuSFljfZrj1pCPvD_KSqw6DKS1ptlDad0IJ6RL5T00tl0aNZF0gSFjH1aL9gKGSkhTr5zetvuiIYwgKC33bpS7GWQWTLOZ0ym1He-g13qoQe17YOXyoTPFXitPg3Fk7Qlvzjv1VL1PN4 
+
+
+
+2021-11-05 12:03:21  TOKEN IS NOT OUTDATED YET || STATUS
+2021-11-05 12:03:23  TOKEN IS NOT OUTDATED YET || STATUS
+-----------------Alice&Server--------------------------
+2021-11-05 12:03:32  Encrypted request to access to Server: 
+ gAAAAABhhLsk2VA6_Km63fkjOfCwd45CB7V0tRDN4zJ4K-S0r9pyWLlqOsypGT4C9VaR4znG2QPPPzfUtUzTa1-DfTDDO11t9jrBQ_9skDG3uTeeAWKgs7E=||gAAAAABhhLsUyio0Gx4cAn4rpuPDpB_in_JNZ_AWjRFlBq43JVnnny1G0YiKdijWVuSFljfZrj1pCPvD_KSqw6DKS1ptlDad0IJ6RL5T00tl0aNZF0gSFjH1aL9gKGSkhTr5zetvuiIYwgKC33bpS7GWQWTLOZ0ym1He-g13qoQe17YOXyoTPFXitPg3Fk7Qlvzjv1VL1PN4 
+
+2021-11-05 12:03:32  ====> SENDING
+
+2021-11-05 12:03:32  Authentication in Server Complete || Server
+2021-11-05 12:03:32  RECEIVED <===
+
+2021-11-05 12:03:32  Encrypted response  from Server: 
+ gAAAAABhhLsk3MZ5z7KSTDOsjt1rabqF9T2KJ0ZjTTMnIfUnFWesdnPltkk4U9gJwvA5ePZrEOtkjTvKNY3WkkOjeHOc6CDEDqXUJ_h7JtJTBeUf5bhQ9Rk= 
+
+2021-11-05 12:03:32  The time of authentication:  -14.85312533378601
+2021-11-05 12:03:32  KERBEROS AUTHENTICATION COMPLETE
